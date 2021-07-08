@@ -1,8 +1,19 @@
+  /*  CSS file  */
 
   body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
   }
+  h1 {
+    color: #000;
+  }
+  p {
+    font-family: verdana;
+    font-size: 16px;
+    color: #545456;
+  }
+
+  /*  Main menu section start */
   .mainmenu {
     background-color: rgb(85, 84, 84);
     overflow: hidden;
@@ -23,39 +34,104 @@
     color: white;
     background-color: #FD6137;
   }
-  #odrerfood, #recipies {
-      padding-left: 80px;
-      padding-right: 80px;
-  }
-  h1 {
-    color: #000;;
-    text-align: left;
-  }
-  p {
-    font-family: verdana;
-    font-size: 16px;
-    color: #545456;
-  }
-  p {
-    text-align: center;
-  }
-  .btn {
-    background-color: rgba(254, 74, 46, 0.938);
-    padding: 14px 25px;
-    text-align: left;
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    display: block;
-    width: 100px;
-    border-radius: 25px;
+
+/*  Order menu section start*/
+#header, #recipies {
+  padding-left: 80px;
+  padding-right: 80px;
 }
-.recp{
-  margin-bottom: 40px;
+.order{ 
+  width: 50%; 
+  height: auto; 
+  float: left;
+}
+.order h1{ 
+  font-size: 60px; 
+  margin-top: 200px;
+}
+.order h1 span{ 
+  color: #FC8745;
+}
+.order p{ 
+  text-align: left;
+}
+.headerimg{
+  margin-left: 50%; 
+  height: auto;
+}
+.btn {
+  display: inline-block;
+  background-image: linear-gradient(60deg, #FB9049, #FE4B2F);
+  text-decoration: none;
+  padding: 14px 25px;
+  color: white;
+  font-weight: bold;
+  text-align: left;
+  border: none;
+  font-size: 18px;
+  width: 100px;
+  border-radius: 25px;
+}
+
+/*  About me section start*/
+.aboutimg{ width: 300px; 
+  height: 500px; 
+  margin-left: 
+  200px;
+}
+.aboutdivimg{
+  width: 50%; 
+  height: auto; 
+  float: left;
+}
+.abouttxt{ 
+  padding-top: 50px; 
+  margin-left: 50%; 
+  height: auto;
+}
+.abouttxt h1{ 
+  font-size: 30px;
+}
+.abouttxt h1 span{ 
+  color: #383838;
+}
+.abouttxt p{
+  text-align: justify; 
+  width: 80%;
+}
+.abouttxt a{
+  margin-top: 80px;
 }
 #aboutme{
     background-image: url("images/shapes/7.png");
     height: 500px;
+}
+
+/*  Recipy section start*/
+#recipies{
+  display: inline-block;
+}
+.recptext{
+  width: 100%; height: auto;
+}
+.recptext h1{
+  font-size: 30px; margin-top: 80px; margin-bottom: 20px; text-align: center;
+}
+.recptext span{
+  color: #383838;
+}
+.recptext p{
+  text-align: center; margin: 20px 300px 30px 300px;
+}
+.recp{
+  margin-bottom: 10px;
+}
+.recpborder img{
+  width: 100%;
+  height: 300px;
+}
+.recpborder p{
+  text-align: left;
 }
 .recpborder{
   border: 10px solid white;
@@ -66,19 +142,58 @@
   width: 31%; 
   height: 500px; 
   float: left; 
+  padding-right: 20px;
 }
+
+/*  Service section start*/
+#servicebox {
+  margin-left: 80px;
+  margin-right: 115px; 
+  margin-top: 30px; 
+  margin-bottom: 20px; 
+  display: flex;
+}
+.servicebx{
+  width: 46.50%;
+  background-size: cover;
+  border-right: 5px solid rgb(238, 163, 24);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px;
+  margin-left: 20px;
+}
+.servicebx{
+  background: rgba(76, 175, 80, 0.1);
+}
+.service1 h2{
+  text-align: center;
+}
+.hotline{
+  font-weight: bold;
+  text-align: center !important;
+}
+.service2 h2{
+  text-align: center;
+}
+.service1 p, .service2 p{
+  text-align: justify;
+}
+.service1 .service2{
+  padding-top: 70px;
+}
+
+/*  Counter section start*/
 #counter {
   margin-left: 80px;
   margin-right: 80px;
-  padding-top: 30px;
+  padding-top: 50px;
   padding-bottom: 30px;
-  display: inline-block; 
-  margin-top: 20px; 
-  margin-bottom: 20px; 
+  display: inline-block;
+  margin-top: 50px;
+  margin-bottom: 20px;
   text-align: center;
 }
 #counter div{
-  width: 365px;  
+  width: 376px;  
   float: left; 
 }
 #counter div span{
@@ -91,3 +206,22 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+/*  Footer section start*/
+.footerbox{
+  margin-top: 40px;
+  background-color: #0B0D17;
+  height: 250px;
+  padding-top: 40px;
+}
+.footerbox h1{
+  color: white; 
+  text-align: center;
+}
+.footerbox h1 span{
+  color:#D7713C;
+}
+.footerbox p{
+  color: white;
+  text-align: center;
+  font-size: 12px;
+}
